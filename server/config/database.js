@@ -1,4 +1,6 @@
 const mysql = require("mysql2");
+require("dotenv").config();
+
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -38,7 +40,7 @@ let question = `CREATE TABLE if not exists question(
   )`;
 
 let answer = `CREATE TABLE if not exists answer (
-  answer_id int auto_increment,
+  answer_id int auto_increment PRIMARY KEY,
   answer varchar(255) not null,
   answer_code_block varchar (255),
   user_id int not null,
