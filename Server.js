@@ -3,8 +3,8 @@ const cors = require("cors");
 require("dotenv").config();
 const pool = require("./server/config/database");
 const userRouter = require("./server/api/users/user.router");
-const questionRouter = require("./server/api/question/question.router");
-//  const questionRouter= require("./server/api/Question/question.router")
+// const questionRouter = require("./server/api/question/question.router");
+ const questionRouter= require("./server/api/Question/question.router")
 const answerRouter = require("./server/api/answer/answer.router");
 
 const port = process.env.PORT;
