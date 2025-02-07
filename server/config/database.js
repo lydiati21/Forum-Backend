@@ -10,7 +10,7 @@ const pool = mysql.createPool({
 });
 
 pool.getConnection((err, connection) => {
-  console.log("database connected!");
+  console.log("database connected!")
 });
 
 let registration = `CREATE TABLE if not exists registration(
