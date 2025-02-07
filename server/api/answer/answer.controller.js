@@ -3,7 +3,7 @@ const {
   getAllAnswers,
   getAnswerById,
   getAnswerByQid,
-} = require("./answer.service");
+} = require("./answer.service")
 
 module.exports = {
   addAnswer: (req, res) => {
