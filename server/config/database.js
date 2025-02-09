@@ -11,7 +11,9 @@ const pool = mysql.createPool({
   queueLimit: 0, // Allow unlimited waiting connections
 });
 
-const pool = mysql.createconnection (process.env.MYSQL_ADDON_URI );
+const pool=((err, connection) => {
+  console.log("database connected!")
+});
 
 let registration = `CREATE TABLE if not exists registration(
   user_id int auto_increment,
