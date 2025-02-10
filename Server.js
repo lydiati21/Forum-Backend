@@ -9,7 +9,7 @@ const answerRouter = require("./server/api/answer/answer.router");
 
 const port = process.env.DB_HOST;
 
-const app = express();
+const app = express()
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
