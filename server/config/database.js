@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   password: process.env.DB_PASS,
   database: process.env.MYSQL_DB,
   waitForConnections: true, // Wait instead of failing when connections are full
-  connectionLimit: 5, // Match Clever Cloud's limit
+  connectionLimit: 3, // Match Clever Cloud's limit
   queueLimit: 0, // Allow unlimited waiting connections
 });
 
