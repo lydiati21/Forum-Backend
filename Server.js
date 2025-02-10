@@ -17,7 +17,6 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/question", questionRouter);
 app.use("/api/answer", answerRouter);
-
 app.listen(port, () => console.log(`Listening at http://localhost:${port}`));
 
 
